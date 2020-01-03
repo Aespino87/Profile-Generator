@@ -27,7 +27,7 @@ function init() {
     api
       .getUser(github)
       .then(response =>
-        api.getnpmTotalStars(github).then(stars => {
+        api.getTotalStars(github).then(stars => {
           return generateHTML({
             stars,
             color,
